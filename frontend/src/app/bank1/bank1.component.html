@@ -1,0 +1,89 @@
+<h1>List of banks</h1>
+<br/>
+<br/>
+<p>Bank(s) v1</p>
+
+<div class="mat-elevation-z8">
+  <table mat-table [dataSource]="dataSource" class="bank-table">
+
+    <!-- BIC Column -->
+    <ng-container matColumnDef="bic">
+      <th mat-header-cell *matHeaderCellDef> BIC </th>
+      <td mat-cell *matCellDef="let row"> {{row.bic}} </td>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef> Name </th>
+      <td mat-cell *matCellDef="let row"> {{row.name}} </td>
+    </ng-container>
+
+    <!-- Country Code Column -->
+    <ng-container matColumnDef="countryCode">
+      <th mat-header-cell *matHeaderCellDef> Country Code </th>
+      <td mat-cell *matCellDef="let row"> {{row.countryCode}} </td>
+    </ng-container>
+
+    <!-- Auth Column -->
+    <ng-container matColumnDef="auth">
+      <th mat-header-cell *matHeaderCellDef> Auth </th>
+      <td mat-cell *matCellDef="let row"> {{row.auth}} </td>
+    </ng-container>
+
+    <!-- Products Column -->
+    <ng-container matColumnDef="products">
+      <th mat-header-cell *matHeaderCellDef> Products </th>
+      <td mat-cell *matCellDef="let row"> {{row.products}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+  </table>
+
+  <mat-paginator [pageSizeOptions]="[5,10,15,20]"  [showFirstLastButtons]="true" aria-label="Select page of banks" #MatPaginator></mat-paginator>
+</div>
+<br/>
+<br/>
+<p>Bank(s) v2</p>
+<div class="mat-elevation-z8">
+  <table mat-table [dataSource]="dataSource1" class="bank-table">
+
+    <!-- BIC Column -->
+    <ng-container matColumnDef="bic">
+      <th mat-header-cell *matHeaderCellDef> BIC </th>
+      <td mat-cell *matCellDef="let row"> {{row.bic}} </td>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef> Name </th>
+      <td mat-cell *matCellDef="let row"> {{row.name}} </td>
+    </ng-container>
+
+    <!-- Country Code Column -->
+    <ng-container matColumnDef="countryCode">
+      <th mat-header-cell *matHeaderCellDef> Country Code </th>
+      <td mat-cell *matCellDef="let row"> {{row.countryCode}} </td>
+    </ng-container>
+
+    <!-- Auth Column -->
+    <ng-container matColumnDef="auth">
+      <th mat-header-cell *matHeaderCellDef> Auth </th>
+      <td mat-cell *matCellDef="let row"> {{row.auth}} </td>
+    </ng-container>
+
+    <!-- Products Column -->
+    <ng-container matColumnDef="products">
+      <th mat-header-cell *matHeaderCellDef> Products </th>
+      <td mat-cell *matCellDef="let row"> {{row.products}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns1"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns1;"></tr>
+  </table>
+
+  <mat-paginator [pageSizeOptions]="[5,10,15,20]"   [showFirstLastButtons]="true" aria-label="Select page of banks" #MatPaginator1></mat-paginator>
+
+
+</div>

@@ -1,0 +1,84 @@
+.container{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-bottom: 100px; */
+    padding-bottom: 70px;
+
+}
+
+.center{
+    font-family:Helvetica, sans-serif;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
+font-weight: bold;
+font-family:Helvetica, sans-serif;
+font-size:35px;
+
+}
+
+p{
+font-weight:400 !important;
+font-family:Helvetica, sans-serif;
+font-size:16px;
+
+}
+
+
+.bank-table {
+
+    border-collapse: collapse;
+    width: 60%;
+    text-align: left;
+    font-size:16px;
+    font-family:Helvetica, sans-serif;
+
+
+
+}
+
+.bank-table td{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+
+
+
+}
+
+.bank-table tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+
+
+
+
+:host ::ng-deep .mat-sort-header-container {
+    display: flex;
+    justify-content: center;
+    font-family:Helvetica, sans-serif;
+
+}
+
+th.mat-header-cell, td.mat-cell {
+    text-align: left;
+    font-family:Helvetica, sans-serif;
+}
+th.mat-header-cell{
+ font-family:Helvetica, sans-serif;
+font-weight:normal;
+font-size:12px;
+
+}
+
+:host ::ng-deep.mat-paginator .mat-paginator-container{
+  justify-content: flex-start;
+  font-family: Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 16px;
+}
